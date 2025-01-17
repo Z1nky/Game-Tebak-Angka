@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Tebak Angka</title>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Game Tebak Angka</h1>
+        </header>
+        <div class="contents">
+            <div class="child-content">
+                <h2>Game Board</h2>
+                <div id="before-game-display">
+                    <h3>Click tombol "Play" untuk memulai</h3>
+                    <button class="btn play-button" id="play-button">
+                        Play
+                    </button>
+                </div>
+                <div class="during-game-display" hidden>
+                    <h3>Silahkan tebak angka!</h3>
+                    <h3>Jawaban Anda:</h3>
+                    <h1>"<u><span id="user-answer"></span></u>"</h1>
+                    <button class="answer-button btn" id="answer-button-1">1</button>
+                    <button class="answer-button btn" id="answer-button-2">2</button>
+                    <button class="answer-button btn" id="answer-button-3">3</button>
+                    <h3>"<span id="user-wrong-answer"></span>" jawaban salah</h3>
+                </div>
+                <div class="after-game-display" hidden>
+                    <h3>Selamat Tebakan Anda Benar!</h3>
+                    <h3>Jawaban benar: </h3>
+                    <h1>"<span id="true-answer"></span>"</h1>
+                    <h3><i>Refresh halaman ini untuk mencoba lagi</i></h3>
+                </div>
+            </div>
+
+            <div class="child-content">
+                <h2>Your Stats</h2>
+                <div class="all-local-stats">
+                    <div class="local-stat-item">
+                        <h3>Jumlah Menang:</h3>
+                        <h3 id="local-total-win"></h3>
+                    </div>
+                    <div class="local-stat-item">
+                        <h3>Jumlah Tebakan Salah Terbanyak:</h3>
+                        <h3 id="local-max-attempt"></h3>
+                    </div>
+                    <button class="btn delete-button" id="destroy-data-button">Hapus Semua Data</button>
+                </div>
+
+            </div>
+
+            <div class="child-content">
+                <h2>Game Session Stats</h2>
+                <div id="all-session-stats">
+                    <div class="session-stat-item">
+                        <h3>Jumlah Tebakan Salah:</h3>
+                        <h3 id="session-user-attempt-amount"></h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="child-content" id="instructions">
+                <h2>Cara bermain</h2>
+                <h3>Selamat datang ke permainan tebak angka, berikut instruksi-nya:</h3>
+                <!-- <ul id="instructions-list"> -->
+                <li>Anda harus mencari kombinasi angka yang terdiri dari angka "1", "2", dan "3",
+                    misalnya "231" dan "123".
+                </li>
+                <li>Angka yang ditebak hanya memiliki panjang 3 karakter saja,
+                    sehingga kombinasi seperti "1231" tidak akan menjadi jawaban.
+                </li>
+                <li>Sebuah angka hanya akan muncul sekali dan hanya sekali,
+                    sehingga kombinasi seperti "223" maupun "111" tidak akan menjadi jawaban.
+                </li>
+                <li><i>Have fun and don't cheat!</i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

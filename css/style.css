@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", serif;
+}
+
+h1,h2,h3{
+    color: #45474B;
+}
+
+.btn{
+    cursor: pointer;
+    border: 1px solid transparent;
+    background-color: #4635B1;
+    color: #FFF;
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .3s ease-in-out;
+    border-radius: 15px;
+}
+
+.btn:hover{
+    border: 1px solid #4635B1;
+    background-color: #FFF;
+    color: #4635B1;
+}
+
+.container{
+    width: 100%;
+}
+
+header{
+    background-color: #4635B1;
+}
+
+.container > header > h1{
+    padding: 30px 0;
+    text-align: center;
+    color: #FBFBFB;
+}
+
+.contents{
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 60px 15px;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(340px, 1fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.child-content{
+    text-align: center;
+    background-color: #F5F7F8;
+    box-shadow: 0px 0px 20px 8px rgba(0,0,0,0.09);
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.child-content > h2{
+    margin-bottom: 10px;
+}
+
+.play-button{
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 6px 16px;
+}
+
+.answer-button {
+    font-size: 18px;
+    padding: 18px;
+    margin: 10px 0;
+}
+
+.delete-button{
+    margin: 20px;
+    padding: 8px 12px;
+    background-color: red;
+}
+
+@media screen and (min-width: 768px) {
+    .contents{
+        padding: 80px 15px;
+        grid-template-columns: repeat(2, minmax(340px, 1fr));
+        gap: 20px;
+    }
+}
