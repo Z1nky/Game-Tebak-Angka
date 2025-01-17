@@ -30,7 +30,7 @@
                         Play
                     </button>
                 </div>
-                <div class="during-game-display" hidden>
+                <div id="during-game-display" hidden>
                     <h3>Silahkan tebak angka!</h3>
                     <h3>Jawaban Anda:</h3>
                     <h1>"<u><span id="user-answer"></span></u>"</h1>
@@ -39,10 +39,10 @@
                     <button class="answer-button btn" id="answer-button-3">3</button>
                     <h3>"<span id="user-wrong-answer"></span>" jawaban salah</h3>
                 </div>
-                <div class="after-game-display" hidden>
+                <div id="after-game-display" hidden>
                     <h3>Selamat Tebakan Anda Benar!</h3>
                     <h3>Jawaban benar: </h3>
-                    <h1>"<span id="true-answer"></span>"</h1>
+                    <h1>"<span id="user-true-answer"></span>"</h1>
                     <h3><i>Refresh halaman ini untuk mencoba lagi</i></h3>
                 </div>
             </div>
@@ -76,17 +76,17 @@
             <div class="child-content" id="instructions">
                 <h2>Cara bermain</h2>
                 <h3>Selamat datang ke permainan tebak angka, berikut instruksi-nya:</h3>
-                <!-- <ul id="instructions-list"> -->
-                <li>Anda harus mencari kombinasi angka yang terdiri dari angka "1", "2", dan "3",
-                    misalnya "231" dan "123".
-                </li>
-                <li>Angka yang ditebak hanya memiliki panjang 3 karakter saja,
-                    sehingga kombinasi seperti "1231" tidak akan menjadi jawaban.
-                </li>
-                <li>Sebuah angka hanya akan muncul sekali dan hanya sekali,
-                    sehingga kombinasi seperti "223" maupun "111" tidak akan menjadi jawaban.
-                </li>
-                <li><i>Have fun and don't cheat!</i></li>
+                <ul id="instructions-list">
+                    <li>Anda harus mencari kombinasi angka yang terdiri dari angka "1", "2", dan "3",
+                        misalnya "231" dan "123".
+                    </li>
+                    <li>Angka yang ditebak hanya memiliki panjang 3 karakter saja,
+                        sehingga kombinasi seperti "1231" tidak akan menjadi jawaban.
+                    </li>
+                    <li>Sebuah angka hanya akan muncul sekali dan hanya sekali,
+                        sehingga kombinasi seperti "223" maupun "111" tidak akan menjadi jawaban.
+                    </li>
+                    <li><i>Have fun and don't cheat!</i></li>
                 </ul>
             </div>
         </div>
