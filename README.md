@@ -40,4 +40,4 @@ Google font, Google icon
 
 ## Authors
 
-- [@Z1nky](https://github.com/Z1nky)
+- [@rakhaallea](https://github.com/rakhaallea)
