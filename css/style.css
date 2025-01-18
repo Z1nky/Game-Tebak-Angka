@@ -60,6 +60,8 @@ header{
     padding: 30px 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .child-content #instructions-list{
