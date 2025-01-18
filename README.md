@@ -11,7 +11,7 @@
 Clone projeknya
 
 ```bash
-  git clone https://github.com/Z1nky/Game-Tebak-Angka.git
+  git clone https://github.com/rakhaallea/Game-Tebak-Angka.git
 ```
 
 Buka direktori projek
